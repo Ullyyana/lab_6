@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1задание</title>
+</head>
+<body>
+  <input type="number" id="celsius" placeholder="Введите температуру в °C">
+  <button onclick="convertTemp()">Пересчитать</button>
+  <p id="result"></p>
+
+
+  <script>
+    function convertTemp() {
+  const celsius = parseFloat(document.getElementById('celsius').value);
+  const fahrenheit = (9/5) * celsius + 32;
+  document.getElementById('result').textContent = `Температура в °F: ${fahrenheit}`;
+}
+  </script>
+
+</body>
+</html>
